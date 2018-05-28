@@ -1,10 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
+import { AppStoreModule } from 'app/lib/store/module';
 
 import { AppComponent } from './app.component';
-import { DashboardModule } from './dashboard/dashboard.module';
-import { ChartPanelComponent } from './ui/chart-panel/chart-panel.component';
 
 export const appRoutes = [
   {
@@ -25,6 +24,7 @@ export const appRoutes = [
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
+    AppStoreModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
