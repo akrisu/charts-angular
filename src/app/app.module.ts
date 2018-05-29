@@ -1,6 +1,9 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
+import { EffectsModule } from '@ngrx/effects';
+import { CompanyModule } from 'app/lib/company/module';
 import { AppStoreModule } from 'app/lib/store/module';
 
 import { AppComponent } from './app.component';
@@ -23,8 +26,11 @@ export const appRoutes = [
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot(appRoutes),
+    EffectsModule.forRoot([]),
     AppStoreModule,
+    CompanyModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

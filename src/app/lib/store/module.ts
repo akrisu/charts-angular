@@ -12,6 +12,6 @@ import { reducer } from './reducer';
       maxAge: 25,
       logOnly: environment.production,
     }),
-  ]
+  ],
 })
 export class AppStoreModule { }

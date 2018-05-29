@@ -1,0 +1,94 @@
+{
+  "companies": [
+    {
+      "name": "Net Comp",
+      "data": [
+        {
+          "week": 48,
+          "revenue": 530,
+          "installations": 6
+        },
+        {
+          "week": 48,
+          "revenue": 530,
+          "installations": 6
+        },
+        {
+          "week": 48,
+          "revenue": 530,
+          "installations": 6
+        },
+        {
+          "week": 48,
+          "revenue": 530,
+          "installations": 6
+        },
+        {
+          "week": 48,
+          "revenue": 530,
+          "installations": 6
+        }
+      ]
+    },
+    {
+      "name": "Analyzer HR",
+      "data": [
+        {
+          "week": 48,
+          "revenue": 530,
+          "installations": 6
+        },
+        {
+          "week": 48,
+          "revenue": 530,
+          "installations": 6
+        },
+        {
+          "week": 48,
+          "revenue": 530,
+          "installations": 6
+        },
+        {
+          "week": 48,
+          "revenue": 530,
+          "installations": 6
+        },
+        {
+          "week": 48,
+          "revenue": 530,
+          "installations": 6
+        }
+      ]
+    },
+    {
+      "name": "Question Right",
+      "data": [
+        {
+          "week": 48,
+          "revenue": 530,
+          "installations": 6
+        },
+        {
+          "week": 48,
+          "revenue": 530,
+          "installations": 6
+        },
+        {
+          "week": 48,
+          "revenue": 530,
+          "installations": 6
+        },
+        {
+          "week": 48,
+          "revenue": 530,
+          "installations": 6
+        },
+        {
+          "week": 48,
+          "revenue": 530,
+          "installations": 6
+        }
+      ]
+    }
+  ]
+}
