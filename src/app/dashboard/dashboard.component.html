@@ -1,0 +1,23 @@
+<app-chart-panel
+  *ngIf="revenueDataset$ | async as revenueDataset"
+  [chartLabels]="chartLabels$ | async"
+  [dataSet]="revenueDataset"
+  [type]="ChartType.Line"
+  buttonCaption="Revenue Analysis"
+  chartDescription="Revenue per week"
+  name="revenue"
+  summary="32556"
+  title="Revenue by solution"
+></app-chart-panel>
+
+<app-chart-panel
+  *ngIf="installationsDataset$ | async as installationsDataset"
+  [chartLabels]="chartLabels$ | async"
+  [dataSet]="installationsDataset"
+  [type]="ChartType.Bar"
+  buttonCaption="Installations"
+  chartDescription="Installations per week"
+  name="installations"
+  summary="136"
+  title="Installations"
+></app-chart-panel>

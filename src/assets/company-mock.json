@@ -1,32 +1,32 @@
 {
   "companies": [
     {
-      "name": "Net Comp",
+      "name": "Question Right",
       "data": [
         {
           "week": 48,
-          "revenue": 530,
-          "installations": 6
+          "revenue": 300,
+          "installations": 3
         },
         {
-          "week": 48,
-          "revenue": 530,
-          "installations": 6
+          "week": 49,
+          "revenue": 200,
+          "installations": 1
         },
         {
-          "week": 48,
-          "revenue": 530,
-          "installations": 6
+          "week": 50,
+          "revenue": 300,
+          "installations": 3
         },
         {
-          "week": 48,
-          "revenue": 530,
-          "installations": 6
+          "week": 51,
+          "revenue": 270,
+          "installations": 3
         },
         {
-          "week": 48,
-          "revenue": 530,
-          "installations": 6
+          "week": 52,
+          "revenue": 50,
+          "installations": 1
         }
       ]
     },
@@ -35,58 +35,58 @@
       "data": [
         {
           "week": 48,
-          "revenue": 530,
-          "installations": 6
+          "revenue": 370,
+          "installations": 4
         },
         {
-          "week": 48,
-          "revenue": 530,
-          "installations": 6
+          "week": 49,
+          "revenue": 450,
+          "installations": 3
         },
         {
-          "week": 48,
-          "revenue": 530,
-          "installations": 6
+          "week": 50,
+          "revenue": 600,
+          "installations": 5
         },
         {
-          "week": 48,
-          "revenue": 530,
-          "installations": 6
+          "week": 51,
+          "revenue": 700,
+          "installations": 7
         },
         {
-          "week": 48,
-          "revenue": 530,
-          "installations": 6
+          "week": 52,
+          "revenue": 180,
+          "installations": 2
         }
       ]
     },
     {
-      "name": "Question Right",
+      "name": "Net Comp",
       "data": [
         {
           "week": 48,
-          "revenue": 530,
+          "revenue": 450,
           "installations": 6
         },
         {
-          "week": 48,
-          "revenue": 530,
-          "installations": 6
+          "week": 49,
+          "revenue": 730,
+          "installations": 7
         },
         {
-          "week": 48,
-          "revenue": 530,
-          "installations": 6
+          "week": 50,
+          "revenue": 900,
+          "installations": 8
         },
         {
-          "week": 48,
-          "revenue": 530,
-          "installations": 6
+          "week": 51,
+          "revenue": 960,
+          "installations": 9
         },
         {
-          "week": 48,
-          "revenue": 530,
-          "installations": 6
+          "week": 52,
+          "revenue": 300,
+          "installations": 3
         }
       ]
     }

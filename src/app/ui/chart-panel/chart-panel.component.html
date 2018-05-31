@@ -1,3 +1,11 @@
-<p>
-  chart-panel works!
-</p>
+<h1>{{ title }}</h1>
+{{ chartDescription }}
+<app-chart
+  [dataSet]="dataSet"
+  [name]="name"
+  [type]="type"
+  [labels]="chartLabels"
+></app-chart>
+<button>
+  {{ buttonCaption }}
+</button>
