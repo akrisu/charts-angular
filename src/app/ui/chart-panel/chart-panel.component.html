@@ -1,11 +1,30 @@
-<h1>{{ title }}</h1>
-{{ chartDescription }}
-<app-chart
-  [dataSet]="dataSet"
-  [name]="name"
-  [type]="type"
-  [labels]="chartLabels"
-></app-chart>
-<button>
-  {{ buttonCaption }}
-</button>
+<article class="chart-panel">
+  <header class="chart-panel__header">
+    <span class="chart-panel__header-icon">{{ icon }}</span>
+    <h1 class="chart-panel__heading">{{ title }}</h1>
+  </header>
+  <figure class="chart-panel__chart">
+    <figcaption class="chart-panel__chart-description">
+      {{ chartDescription }}
+    </figcaption>
+    <app-chart
+      [dataSet]="dataSet"
+      [labels]="chartLabels"
+      [name]="name"
+      [type]="type"
+    ></app-chart>
+  </figure>
+  <div class="chart-panel__summary">
+    <span class="chart-panel__summary-amount">
+      {{ summary | currency: currency : currency ? 'symbol' : '' : '1.0' }}
+    </span>
+    <span class="chart-panel__summary-description">
+      {{ summaryCaption }}
+    </span>
+  </div>
+  <div class="chart-panel__button-container">
+    <button class="chart-panel__button" type="button">
+      {{ buttonCaption }}
+    </button>
+  </div>
+</article>

@@ -1,0 +1,91 @@
+@import "~styles/variables"
+
+.chart-panel
+  border-radius: 2px
+  border: 1px solid $color-blue--3
+  display: grid
+  grid-template-areas: "header header" "chart summary" "chart button"
+  grid-template-columns: auto 200px
+  grid-template-rows: 40px 300px 100px
+  height: auto
+  margin: 40px auto
+  width: 820px
+  @media(max-width: $tablet-width)
+    grid-template-areas: "header header" "chart chart" "summary button"
+    grid-template-columns: 200px 200px
+    grid-template-rows: 40px 260px 100px
+    width: 400px
+
+  &__header
+    background: $color-blue--2
+    color: $color-blue--4
+    font-size: 13px
+    grid-area: header
+    padding-left: 20px
+    position: relative
+    width: 100%
+
+    &-icon
+      background: $color-blue--5
+      border-radius: 4px
+      border: 3px solid $color-white--1
+      box-shadow: 0px 0px 5px 1px #bbb;
+      color: $color-blue--4
+      font-size: 25px
+      height: 40px
+      padding-top: 2px
+      position: absolute
+      text-align: center
+      top: -10px
+      width: 40px
+
+  &__heading
+    left: calc(10%)
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    @media(max-width: $tablet-width)
+      left: calc(10% + 40px)
+
+  &__chart
+    grid-area: chart
+
+    &-description
+      font-size: 11px
+      padding: 10px 20px
+      text-align: right
+
+  &__summary
+    color: $color-blue--4
+    grid-area: summary
+    padding: 50px 20px 20px
+    text-align: right
+    @media(max-width: $tablet-width)
+      padding: 20px
+
+    &-amount
+      clear: both
+      display: block
+      font-size: 45px
+      letter-spacing: -3.2px
+
+    &-description
+      color: $color-blue--3
+      font-size: 13px
+
+
+  &__button-container
+    grid-area: button
+    padding: 30px 20px 20px
+    text-align: center
+
+  &__button
+    background: linear-gradient(rgba(34,179,220,1) 0%, rgba(26,98,123,1) 100%);
+    background: rgb(34,179,220);
+    border-radius: 7px
+    border: 2px solid $color-white--1
+    box-shadow: 10px 10px 12px -8px rgba(204,204,204,1);
+    color: $color-white--1
+    cursor: pointer
+    padding: 10px
+    width: 100%

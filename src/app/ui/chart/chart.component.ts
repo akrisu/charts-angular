@@ -9,7 +9,7 @@ import { getChartOptions } from './chart-options';
   changeDetection: ChangeDetectionStrategy.OnPush,
   selector: 'app-chart',
   templateUrl: './chart.component.html',
-  styleUrls: ['./chart.component.css'],
+  styleUrls: ['./chart.component.sass'],
 })
 export class ChartComponent implements AfterViewInit {
   @Input() public labels: string[];
@@ -26,7 +26,7 @@ export class ChartComponent implements AfterViewInit {
         labels: this.labels,
         datasets: this.dataSet
       },
-      options: getChartOptions(this.type)
+      options: getChartOptions(this.type),
     });
   }
 }
