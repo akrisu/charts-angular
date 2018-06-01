@@ -1,0 +1,28 @@
+{
+  "CHARTS": {
+    "REVENUE": {
+      "BUTTON": {
+        "CAPTION": "Revenue Analysis"
+      },
+      "CHART": {
+        "DESCRIPTION": "Revenue per week"
+      },
+      "SUMMARY": {
+        "CAPTION": "Revenue Stream"
+      },
+      "TITLE": "Revenue by solution"
+    },
+    "INSTALLATIONS": {
+      "BUTTON": {
+        "CAPTION": "Installations"
+      },
+      "CHART": {
+        "DESCRIPTION": "Installations per week"
+      },
+      "SUMMARY": {
+        "CAPTION": "Installations"
+      },
+      "TITLE": "Installations"
+    }
+  }
+}

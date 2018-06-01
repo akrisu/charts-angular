@@ -5,7 +5,13 @@ import { Observable } from 'rxjs';
 import { filter, map } from 'rxjs/operators';
 
 import { FetchCompanyData } from '../lib/company/action';
-import { selectChartLabels, selectInstallationsData, selectRevenueData } from '../lib/company/selector';
+import {
+  selectChartLabels,
+  selectInstallationsData,
+  selectInstallationsSummary,
+  selectRevenueData,
+  selectRevenueSummary,
+} from '../lib/company/selector';
 import { IState } from '../lib/store/state';
 import { createChartDataset, IChartDataset } from '../ui/chart/chart-dataset';
 import { ChartType } from '../ui/chart/chart-type.enum';
@@ -28,6 +34,10 @@ export class DashboardComponent implements OnInit {
       map(data => data.map(createChartDataset(ChartType.Bar))),
       map(reverse),
     );
+
+  public readonly revenueSummary$: Observable<number> = this.store$.select(selectRevenueSummary);
+
+  public readonly installationsSummary$: Observable<number> = this.store$.select(selectInstallationsSummary);
 
   public readonly chartLabels$: Observable<string[]> = this.store$.select(selectChartLabels)
     .pipe(

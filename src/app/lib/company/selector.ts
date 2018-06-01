@@ -40,3 +40,21 @@ export const selectInstallationsData: MemoizedSelector<IState, IChartDatasetProp
       })
     )
   );
+
+  export const selectRevenueSummary: MemoizedSelector<IState, number> = createSelector(
+    selectCompanies,
+    companies =>
+      companies
+        .map(({ statistics }) => statistics
+          .map(({ revenue }) => revenue)
+          .reduce((acc, value) => acc + value))
+        .reduce((acc, value) => acc + value));
+
+  export const selectInstallationsSummary: MemoizedSelector<IState, number> = createSelector(
+    selectCompanies,
+    companies =>
+      companies
+        .map(({ statistics }) => statistics
+          .map(({ installations }) => installations)
+          .reduce((acc, value) => acc + value))
+        .reduce((acc, value) => acc + value));
