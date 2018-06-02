@@ -8,7 +8,7 @@ const initialState: ICompanyState = {
   data: [],
 };
 
-export const companyReducer = (state = initialState, action: CompanyAction): ICompanyState => {
+export function companyReducer(state = initialState, action: CompanyAction): ICompanyState {
   switch (action.type) {
     case CompanyActionType.FetchCompanies:
       return {
